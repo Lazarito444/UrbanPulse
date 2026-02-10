@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
@@ -6,7 +6,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\UrbanPulse.ServiceDefaults\UrbanPulse.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\UrbanPulse.ServiceDefaults\UrbanPulse.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

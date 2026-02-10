@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\UrbanPulse.Api\UrbanPulse.Api.csproj" />
+    <ProjectReference Include="..\UrbanPulse.Api\UrbanPulse.Api.csproj" />
   </ItemGroup>
 
 </Project>

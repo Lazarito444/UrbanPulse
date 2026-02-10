@@ -9,10 +9,10 @@
   <Folder Name="/src/">
     <Project Path="src/UrbanPulse.AppHost/UrbanPulse.AppHost.csproj" />
     <Project Path="src/UrbanPulse.ServiceDefaults/UrbanPulse.ServiceDefaults.csproj" />
-    <Project Path="UrbanPulse.Api/UrbanPulse.Api.csproj" />
-    <Project Path="UrbanPulse.Application/UrbanPulse.Application.csproj" Id="4ae06fe0-0898-4b5d-804b-6e6d8d4758e1" />
-    <Project Path="UrbanPulse.Domain/UrbanPulse.Domain.csproj" Id="f8727057-bb00-4746-adae-cf23909dd4d6" />
-    <Project Path="UrbanPulse.Infrastructure/UrbanPulse.Infrastructure.csproj" Id="1a3dbc88-b268-4d4b-8a07-47e32fe08758" />
+    <Project Path="src/UrbanPulse.Api/UrbanPulse.Api.csproj" />
+    <Project Path="src/UrbanPulse.Application/UrbanPulse.Application.csproj" Id="4ae06fe0-0898-4b5d-804b-6e6d8d4758e1" />
+    <Project Path="src/UrbanPulse.Domain/UrbanPulse.Domain.csproj" Id="f8727057-bb00-4746-adae-cf23909dd4d6" />
+    <Project Path="src/UrbanPulse.Infrastructure/UrbanPulse.Infrastructure.csproj" Id="1a3dbc88-b268-4d4b-8a07-47e32fe08758" />
   </Folder>
   <Folder Name="/Tests/" />
 </Solution>

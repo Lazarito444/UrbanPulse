@@ -1,11 +1,12 @@
 using Scalar.AspNetCore;
+using UrbanPulse.Api.Extensions;
 using UrbanPulse.ServiceDefaults;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 
-builder.Services.AddOpenApi();
+builder.Services.SetupOpenApi();
 
 WebApplication app = builder.Build();
 
