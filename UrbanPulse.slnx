@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/UrbanPulse.AppHost/UrbanPulse.AppHost.csproj" />
+    <Project Path="src/UrbanPulse.ServiceDefaults/UrbanPulse.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/Tests/" />
+</Solution>
