@@ -1,3 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+  <ItemGroup>
+    <ProjectReference Include="..\UrbanPulse.Domain\UrbanPulse.Domain.csproj" />
+  </ItemGroup>
 </Project>
