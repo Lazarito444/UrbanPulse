@@ -5,10 +5,8 @@ namespace UrbanPulse.Infrastructure;
 
 internal static class SpecificationEvaluator<TEntity, TResult> where TEntity : class
 {
-    public static IQueryable<TResult> GetQuery(IQueryable<TEntity> inputQuery, ISpecification<TEntity, TResult> spec)
+    public static IQueryable<TEntity> GetFilteredQuery(IQueryable<TEntity> inputQuery, ISpecification<TEntity, TResult> spec)
     {
-        ArgumentNullException.ThrowIfNull(spec.Selector);
-
         IQueryable<TEntity> query = inputQuery;
 
         foreach (Expression<Func<TEntity, bool>> criterion in spec.Criteria)
@@ -16,10 +14,18 @@ internal static class SpecificationEvaluator<TEntity, TResult> where TEntity : c
             query = query.Where(criterion);
         }
 
+        return query;
+    }
+
+    public static IQueryable<TResult> GetFinalQuery(IQueryable<TEntity> filteredQuery, ISpecification<TEntity, TResult> spec)
+    {
+        ArgumentNullException.ThrowIfNull(spec.Selector);
+
+        IQueryable<TEntity> query = filteredQuery;
+
         if (spec.OrderExpressions.Any())
         {
             IOrderedQueryable<TEntity> orderedQuery = null!;
-
             for (int i = 0; i < spec.OrderExpressions.Count; i++)
             {
                 OrderByExpression<TEntity> orderExpr = spec.OrderExpressions[i];

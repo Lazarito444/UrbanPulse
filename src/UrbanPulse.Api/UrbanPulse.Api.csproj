@@ -6,6 +6,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\UrbanPulse.Infrastructure\UrbanPulse.Infrastructure.csproj" />
     <ProjectReference Include="..\UrbanPulse.ServiceDefaults\UrbanPulse.ServiceDefaults.csproj" />
   </ItemGroup>
 
