@@ -6,7 +6,12 @@ public static class IServiceCollectionExtensions
 {
     extension(IServiceCollection services)
     {
-        public IServiceCollection SetupOpenApi()
+        public IServiceCollection SetupApi()
+        {
+            services.SetupOpenApi();
+            return services;
+        }
+        private IServiceCollection SetupOpenApi()
         {
             return services.AddOpenApi(opt =>
             {
