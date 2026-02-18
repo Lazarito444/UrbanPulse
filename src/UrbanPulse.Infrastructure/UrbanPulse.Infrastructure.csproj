@@ -5,7 +5,4 @@
   <ItemGroup>
     <ProjectReference Include="..\UrbanPulse.Application\UrbanPulse.Application.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EntityConfigurations\" />
-  </ItemGroup>
 </Project>

@@ -14,6 +14,8 @@ builder.Services.SetupApi();
 
 WebApplication app = builder.Build();
 
+app.ApplyMigrations();
+
 app.MapDefaultEndpoints();
 
 if (app.Environment.IsDevelopment())
